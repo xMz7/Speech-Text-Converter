@@ -3,11 +3,11 @@ import queue
 import vosk
 import json
 
-# تحميل نموذج اللغة العربية
-model_path = "C:/Users/hhhaa/OneDrive/Desktop/Projects/vosk-model-ar-mgb2-0.4"  # استبدل هذا بالمسار الفعلي للمجلد
+
+model_path = "C:/Users/hhhaa/OneDrive/Desktop/Projects/vosk-model-ar-mgb2-0.4"  #Changeable 
 model = vosk.Model(model_path)
 
-# إعداد الميكروفون
+
 q = queue.Queue()
 
 def callback(indata, frames, time, status):
